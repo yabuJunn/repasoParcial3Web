@@ -8,5 +8,5 @@ import { mainRouter } from './assets/routes/mainRoutes.tsx'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <RouterProvider router={mainRouter} />
-  </StrictMode>,
+  </StrictMode>
 )

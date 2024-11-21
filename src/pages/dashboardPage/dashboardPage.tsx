@@ -7,6 +7,7 @@ import { NavigationBar } from '../../components/navigationBar/navigationBar'
 import { useDispatch, useSelector } from 'react-redux'
 import { updateCatsData } from '../../store/catsSlice/slice'
 import { RootState } from '../../store/store'
+import { CatCard } from '../../components/dashboardPage/catCard/catCard'
 
 export const DashboardPage = () => {
     const dispatch = useDispatch()
@@ -25,8 +26,10 @@ export const DashboardPage = () => {
     return <>
         <NavigationBar></NavigationBar>
 
-        <div>
-            
+        <div id='catsCardsContainer'>
+            {catsSliceData.catsData.map((cat) => {
+                return <CatCard catImageUrl={`https://cdn2.thecatapi.com/images/${cat.reference_image_id}.jpg`} catName={cat.name} catDescription={cat.description}></CatCard>
+            })}
         </div>
     </>
 }

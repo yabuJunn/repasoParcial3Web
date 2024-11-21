@@ -1,0 +1,17 @@
+.CatCardContainer {
+    width: 12vw;
+    height: 20vw;
+    aspect-ratio: 1/1;
+    background-color: #7648ED;
+    margin-bottom: 1vw;
+    margin-right: 1vw;
+}
+
+.CatCardContainer img {
+    width: 100%;
+}
+
+.CatCardContainer p, h2 {
+    color: white;
+    margin: 0.2vw;
+}

@@ -1,5 +1,6 @@
-import { CatApiResponseType } from "../../types/catApiTypes";
+import { CatApiResponseType, CatElementType } from "../../types/catApiTypes";
 
 export interface catsSliceTypes {
-    catsData: CatApiResponseType
+    catsData: CatApiResponseType,
+    catDetailToShow: undefined | CatElementType
 }

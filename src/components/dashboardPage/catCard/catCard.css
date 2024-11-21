@@ -5,6 +5,7 @@
     background-color: #7648ED;
     margin-bottom: 1vw;
     margin-right: 1vw;
+    cursor: pointer;
 }
 
 .CatCardContainer img {

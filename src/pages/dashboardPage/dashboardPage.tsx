@@ -28,7 +28,7 @@ export const DashboardPage = () => {
 
         <div id='catsCardsContainer'>
             {catsSliceData.catsData.map((cat) => {
-                return <CatCard catImageUrl={`https://cdn2.thecatapi.com/images/${cat.reference_image_id}.jpg`} catName={cat.name} catDescription={cat.description}></CatCard>
+                return <CatCard catData={cat} key={cat.id}></CatCard>
             })}
         </div>
     </>

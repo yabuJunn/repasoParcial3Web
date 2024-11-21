@@ -1,0 +1,28 @@
+#detailPageContainer {
+    width: 90%;
+    height: 80vh;
+    margin: 5%;
+    background-color: #1E1E1E;
+}
+
+#detailCatHeader {
+    width: 100%;
+    height: 60%;
+
+    display: flex;
+}
+
+#detailCatHeader img {
+    height: 100%;
+    margin-right: 2%;
+}
+
+#detailCatHeaderText {
+    color: white;
+}
+
+#detailLists {}
+
+#detailLists ol {
+    color: white;
+}

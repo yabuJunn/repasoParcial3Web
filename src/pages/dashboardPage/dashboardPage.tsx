@@ -3,6 +3,7 @@ import './dashboardPage.css'
 import { useEffect, useState } from "react"
 import { fetchApi } from "../../services/fetch"
 import { CatApiResponseType } from "../../types/catApiTypes"
+import { NavigationBar } from '../../components/navigationBar/navigationBar'
 
 export const DashboardPage = () => {
     const [apiData, setApiData] = useState<CatApiResponseType>([])
@@ -17,6 +18,6 @@ export const DashboardPage = () => {
     }, [])
 
     return <>
-        {apiData.map(cat => { return <img src={`https://cdn2.thecatapi.com/images/${cat.reference_image_id}.jpg`}></img> })}
+        <NavigationBar></NavigationBar>
     </>
 }

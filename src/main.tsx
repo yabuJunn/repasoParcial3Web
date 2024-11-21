@@ -3,9 +3,11 @@ import './index.css'
 
 import { RouterProvider } from 'react-router-dom'
 import { mainRouter } from './routes/mainRoutes.tsx'
+import { Provider } from 'react-redux'
+import { store } from './store/store.ts'
 
 createRoot(document.getElementById('root')!).render(
-
-  <RouterProvider router={mainRouter} />
-
+  <Provider store={store}>
+    <RouterProvider router={mainRouter} />
+  </Provider>
 )

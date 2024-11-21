@@ -1,8 +1,8 @@
 import { createHashRouter } from "react-router-dom";
 
-import { DashboardPage } from "../../pages/dashboardPage/dashboardPage";
-import { DetailPage } from "../../pages/detailPage/detailPage";
-import { QuizPage } from "../../pages/quizPage/quizPage";
+import { DashboardPage } from "../pages/dashboardPage/dashboardPage";
+import { DetailPage } from "../pages/detailPage/detailPage";
+import { QuizPage } from "../pages/quizPage/quizPage";
 
 export const mainRouter = createHashRouter([
     {

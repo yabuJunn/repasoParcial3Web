@@ -19,5 +19,9 @@ export const DashboardPage = () => {
 
     return <>
         <NavigationBar></NavigationBar>
+
+        <div>
+
+        </div>
     </>
 }
